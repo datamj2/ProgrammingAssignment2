@@ -2,7 +2,6 @@
 ## results are returned until the matrix is reset, at which point the matrix
 ## is inverted and the results re-cached.
 
-
 ## makeCacheMatrix caches and retrieves matrix x via set and get, and caches and retrieves
 ## the inverted matrix via setsolve and getsolve. x$set(x) resets matrix x.
 
