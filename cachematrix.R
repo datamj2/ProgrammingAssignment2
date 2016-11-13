@@ -1,7 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
+## these functions invert a square matrix and cache the results. The cached 
+## results are returned until the matrix is reset, at which point the matrix
+## is inverted and the results re-cached.
 
-## Write a short comment describing this function
+
+## makeCacheMatrix caches and retrieves matrix x via set and get, and caches and retrieves
+## the inverted matrix via setsolve and getsolve. x$set(x) resets matrix x.
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
@@ -18,7 +21,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve returns the cached inverted matrix if it is not null. Otherwise
+## the matrix to be inverted is retrieved and the inverted value is cached and
+## then returned.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
