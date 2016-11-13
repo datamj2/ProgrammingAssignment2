@@ -21,9 +21,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## cacheSolve returns the cached inverted matrix if it is not null. Otherwise
-## the matrix to be inverted is retrieved and the inverted value is calculated and
-## cached. This inverted value is then returned.
+## cacheSolve returns the previously inverted and cached matrix if m is not null. 
+## Otherwise the matrix to be inverted is retrieved and the inverted value is 
+## calculated and cached. This inverted value is then returned.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
